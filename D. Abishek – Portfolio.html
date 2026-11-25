@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>D. Abishek – Full-Stack Web Developer & Generative AI Engineer</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#f3f5f9;--surface:#fff;--ink:#14213d;--muted:#55607a;--line:#d8deea;--web:#2f55d4;--ai:#0b8f7e;--webtint:#e6ecff;--aitint:#dcf5f0;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1526;--surface:#162038;--ink:#e8ecf6;--muted:#a0aac4;--line:#2a3654;--web:#8aa4ff;--ai:#4fd1bd;--webtint:#1d2a52;--aitint:#12383a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0e1526;--surface:#162038;--ink:#e8ecf6;--muted:#a0aac4;--line:#2a3654;--web:#8aa4ff;--ai:#4fd1bd;--webtint:#1d2a52;--aitint:#12383a;color-scheme:dark}
+html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "IBM Plex Sans",system-ui,sans-serif}
+.wrap{max-width:960px;margin:0 auto;padding:0 22px}
+h1,h2,h3{font-family:"Bricolage Grotesque","IBM Plex Sans",sans-serif;line-height:1.1;margin:0}
+h1{font-size:clamp(2.6rem,8vw,4.6rem);font-weight:800;letter-spacing:-.02em}
+h2{font-size:1.9rem;font-weight:700;margin-bottom:22px}
+h3{font-size:1.2rem;font-weight:700}
+a{color:var(--web)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--ai);outline-offset:3px}
+nav{display:flex;gap:20px;flex-wrap:wrap;padding:22px 0;font-weight:500}
+nav a{color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--ink)}
+.hero{padding:34px 0 64px}
+.role{font-size:1.25rem;color:var(--muted);margin:14px 0 26px;max-width:34ch}
+.stack{display:grid;grid-template-columns:1fr auto 1fr;align-items:stretch;gap:0;margin:34px 0;max-width:640px}
+.side{border:2px solid;border-radius:14px;padding:16px 18px;background:var(--surface)}
+.side.web{border-color:var(--web)}.side.ai{border-color:var(--ai)}
+.side b{font-family:"Bricolage Grotesque",sans-serif;font-size:1.15rem;display:block;margin-bottom:6px}
+.side.web b{color:var(--web)}.side.ai b{color:var(--ai)}
+.side span{font-size:.95rem;color:var(--muted)}
+.link{display:flex;flex-direction:column;justify-content:center;align-items:center;padding:0 10px;font-size:.85rem;color:var(--muted);min-width:76px}
+.link i{display:block;width:100%;height:3px;background:linear-gradient(90deg,var(--web),var(--ai));border-radius:3px;margin:5px 0;position:relative;overflow:hidden}
+.link i::after{content:"";position:absolute;top:0;left:-30%;width:30%;height:100%;background:var(--bg);animation:pulse 2.2s ease-in-out infinite}
+@keyframes pulse{to{left:100%}}
+@media (prefers-reduced-motion:reduce){.link i::after{animation:none}html{scroll-behavior:auto}}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:11px 20px;border-radius:10px;font-weight:600;text-decoration:none;border:2px solid var(--ink);color:var(--ink)}
+.btn.main{background:var(--ink);color:var(--bg)}
+section{padding:46px 0;border-top:1px solid var(--line)}
+.about{max-width:62ch}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
+.skills h3{margin-bottom:10px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.chips li{padding:4px 12px;border-radius:999px;font-size:.92rem;font-weight:500}
+.w li{background:var(--webtint)}.a li{background:var(--aitint)}.t li{border:1px solid var(--line)}
+.job{margin-bottom:26px}
+.meta{color:var(--muted);font-size:.95rem;margin:2px 0 8px}
+ul.pts{margin:0;padding-left:20px}ul.pts li{margin-bottom:4px}
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.proj{background:var(--surface);border:1px solid var(--line);border-left-width:6px;border-radius:12px;padding:20px}
+.proj.both{border-left-color:var(--ai)}.proj.webp{border-left-color:var(--web)}
+.proj .tag{font-size:.88rem;color:var(--muted);margin:4px 0 10px}
+.edu p{margin:0 0 10px}
+.certs{columns:2 280px;padding-left:20px;margin:0}
+footer{padding:46px 0 60px;border-top:1px solid var(--line)}
+footer p{margin:0 0 8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav aria-label="Sections"><a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a></nav>
+
+<header class="hero">
+<h1>D. Abishek</h1>
+<p class="role">Full-stack web developer and Generative AI engineer. I build the web app and the AI behind it.</p>
+<div class="stack" aria-label="I work on both the interface and the model">
+<div class="side web"><b>Interface</b><span>HTML, CSS, JavaScript, Express, PHP, SQL</span></div>
+<div class="link">API<i></i>JSON</div>
+<div class="side ai"><b>Model</b><span>Python, TensorFlow, LLMs, RAG, vector databases</span></div>
+</div>
+<div class="btns"><a class="btn main" href="#projects">See my projects</a><a class="btn" href="mailto:abishekgogi1@gmail.com">Email me</a></div>
+</header>
+
+<section id="about"><h2>About</h2>
+<p class="about">I’m an AI and Data Science graduate from Karunya Institute of Technology and Sciences, Coimbatore. I’ve completed a Generative AI internship and a Flutter and PHP internship, and I’ve built projects that connect web interfaces to deep learning and LLM models. I’m looking for a web developer or Generative AI role where I can build practical, AI-powered products.</p></section>
+
+<section id="skills"><h2>Skills</h2>
+<div class="skills">
+<div><h3>Web development</h3><ul class="chips w"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Bootstrap</li><li>Express.js</li><li>Node.js (basic)</li><li>PHP</li><li>Flask</li><li>REST APIs</li><li>React Native (basic)</li><li>Flutter (basic)</li></ul></div>
+<div><h3>Generative AI</h3><ul class="chips a"><li>LLMs</li><li>RAG</li><li>Embeddings</li><li>Prompt design</li><li>NLP</li><li>LangChain</li><li>OpenAI</li><li>AWS Bedrock</li><li>Amazon Titan</li><li>FAISS</li><li>Pinecone</li><li>OpenSearch</li><li>ChromaDB</li></ul></div>
+<div><h3>Data and machine learning</h3><ul class="chips t"><li>Python</li><li>TensorFlow</li><li>Deep learning</li><li>Data preprocessing</li><li>Model evaluation</li><li>Data analytics</li></ul></div>
+<div><h3>Databases and tools</h3><ul class="chips t"><li>SQL</li><li>MySQL</li><li>Firebase</li><li>Git</li><li>GitHub</li><li>Postman</li><li>AWS (S3, EC2)</li><li>Jupyter</li><li>Google Colab</li><li>VS Code</li></ul></div>
+</div></section>
+
+<section id="experience"><h2>Experience</h2>
+<div class="job"><h3>Generative AI Intern</h3><p class="meta">Secovasolutions, Aadhambaakam, Chennai | 7 April 2025 – 27 June 2025</p>
+<ul class="pts"><li>Applied LLM concepts and Generative AI tools to build practical, real-world solutions.</li><li>Worked with RAG, embeddings and vector databases in LLM application prototypes.</li><li>Integrated AI services into applications through APIs.</li></ul></div>
+<div class="job"><h3>Flutter App Development Intern</h3><p class="meta">Wisual Technologies, Chennai | 28 May 2024 – 25 June 2024</p>
+<ul class="pts"><li>Learned PHP for backend development and built dynamic web pages.</li><li>Built a cross-platform mobile application with Flutter.</li></ul></div></section>
+
+<section id="projects"><h2>Projects</h2>
+<div class="projects">
+<article class="proj both"><h3>Text-to-Image Generator</h3><p class="tag">JavaScript, HTML/CSS, Generative AI API</p><p>A responsive interface where you type a prompt and get an image from a pre-trained diffusion model through an API. Handles requests, JSON responses and prompt structure to improve results.</p></article>
+<article class="proj both"><h3>Sentiment Analysis Web App</h3><p class="tag">Python, TensorFlow, Flask, HTML/CSS</p><p>A deep learning model that analyzes user reviews and returns sentiment in real time through a Flask backend and a simple web frontend.</p></article>
+<article class="proj webp"><h3>Realtime Chat App</h3><p class="tag">HTML, CSS, JavaScript, Firebase</p><p>A messaging app with login authentication and live message sync using Firebase Realtime Database.</p></article>
+<article class="proj webp"><h3>Gym Management System</h3><p class="tag">PHP, SQL, HTML/CSS</p><p>A web system for managing trainers, members, subscriptions and reports with CRUD operations and relational SQL queries.</p></article>
+</div>
+<p class="meta" style="margin-top:16px">Source code is on <a href="https://github.com/abishekd-del">GitHub</a>.</p></section>
+
+<section id="education"><h2>Education and certifications</h2>
+<div class="edu"><p><b>B.Tech, Computer Science and Engineering (AI &amp; Data Science)</b><br>Karunya Institute of Technology and Sciences, Coimbatore | 2022–2026</p>
+<p><b>HSC (Class 12)</b>, 2022, 71%. Velammal Matric Higher Secondary School, Theni</p>
+<p><b>SSLC (Class 10)</b>, 2020, 93.2%. Velammal Matric Higher Secondary School, Theni</p></div>
+<ul class="certs"><li>JavaScript Essentials, Cisco</li><li>SQL for Beginners, HackerRank</li><li>Building Predictive Models with Machine Learning, Infosys</li><li>Programming Essentials in Python, Cisco</li><li>Data Analytics Essentials, Cisco</li><li>Programming Essentials in C, Cisco</li><li>Networking Basics, Cisco</li></ul></section>
+
+<footer id="contact"><h2>Contact</h2>
+<p>Email: <a href="mailto:abishekgogi1@gmail.com">abishekgogi1@gmail.com</a></p>
+<p><a href="https://www.linkedin.com/in/abishek-d-b5a0a0303/">LinkedIn</a> and <a href="https://github.com/abishekd-del">GitHub</a></p>
+<p class="meta">Based in Tamil Nadu, India. Speaks Tamil, English and Kannada.</p></footer>
+</div>
+</body>
+</html>
